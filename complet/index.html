@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>l’épi — Salon de coiffure (maquette Complet)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Manrope:wght@400..800&display=swap">
+<link rel="stylesheet" href="../kit/std.css">
+<style>:root{--pri:#12162B;--pri-2:#262B48;--acc:#2C44D8;--btn:#2C44D8;--btn-2:#1B2B9E;--btn-r:999px;--soft:#FBEDEA;--ink:#12162B;--muted:#5A5F74;--line:#E2E3EA;--radius:14px;--fd:'Bricolage Grotesque';--fb:'Manrope';--fdw:700;--fdls:-.025em}</style>
+</head>
+<body>
+<div class="topbar wrap"><span><b>Mar – ven 9 h 30 – 19 h</b> · sam 9 h – 18 h</span><span><span class="ph">[Adresse du salon]</span>, <span class="ph">[Ville]</span> · <a href="tel:+33000000000"><span class="ph">[00 00 00 00 00]</span></a></span></div>
+<header class="hd wrap">
+  <a class="logo" href="index.html"><b>l’épi</b><small>Salon de coiffure</small></a>
+  <nav aria-label="Navigation principale"><a href="index.html" class="on" aria-current="page">Accueil</a><a href="prestations.html">Prestations</a><a href="realisations.html">Galerie</a><a href="a-propos.html">L’équipe</a><a href="contact.html">Rendez-vous</a></nav>
+  <div class="side"><a class="btn sm" href="contact.html#demande">Prendre rendez-vous</a><button class="burger" type="button" aria-label="Menu" aria-expanded="false"><i></i></button></div>
+</header>
+<nav class="mnav" aria-label="Menu mobile"><a href="index.html" class="on" aria-current="page">Accueil</a><a href="prestations.html">Prestations</a><a href="realisations.html">Galerie</a><a href="a-propos.html">L’équipe</a><a href="contact.html">Rendez-vous</a><a class="btn" href="contact.html#demande">Prendre rendez-vous</a></nav>
+
+<main>
+<section class="hero soft wrap" style="padding-bottom:96px">
+  <div>
+    <div class="eyebrow">Salon de coiffure indépendant · <span class="ph">[Ville]</span></div>
+    <h1>Des cheveux qui vous ressemblent</h1>
+    <p class="lede">Coupe, couleur, soin et coiffage pour femmes, hommes et enfants. On prend le temps d’écouter avant de couper.</p>
+    <div class="ctas"><a class="btn" href="contact.html#demande">Prendre rendez-vous <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn line" href="prestations.html">Voir les prestations</a></div>
+    <div class="keys"><div><b>Conseil d’abord</b><span>un échange avant chaque prestation</span></div><div><b>Tous les cheveux</b><span>lisses, ondulés, bouclés, frisés</span></div><div><b>Sur rendez-vous</b><span>en ligne ou par téléphone</span></div></div>
+  </div>
+  <div class="mos"><div class="a" style="background-image:url(../img/salon.jpg)"></div><div class="b" style="background-image:url(../img/balayage.jpg)"></div><div class="c" style="background-image:url(../img/bac.jpg)"></div>
+    <div class="badge"><b>Ouvert aujourd’hui</b>9 h 30 – 19 h</div></div>
+</section>
+<section class="quick wrap" aria-label="Prendre rendez-vous">
+  <form class="datecheck" style="--n:3">
+    <div><h3>Prendre rendez-vous</h3><p class="small">Confirmation par SMS dans la journée.</p></div>
+    <div class="f"><label for="prestation">Prestation</label><select id="prestation" name="prestation"><option value="femme">Femme</option><option value="homme">Homme</option><option value="enfant">Enfant</option></select></div><div class="f"><label for="date">Date</label><input id="date" name="date" type="date" required></div><div class="f"><label for="heure">Heure</label><select id="heure" name="heure"><option>9 h 30</option><option>10 h 30</option><option>11 h 30</option><option>14 h</option><option>15 h 30</option><option>17 h</option><option>18 h</option></select></div>
+    <button class="btn" type="submit">Voir ce créneau</button>
+  </form>
+  <div class="res" role="status"><h3 style="margin-bottom:4px">Créneau choisi</h3><dl></dl><div class="est"></div>
+    <p class="muted" style="margin-top:8px">Ajoutez vos coordonnées pour valider : nous confirmons le rendez-vous par SMS.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:14px 22px;align-items:center;margin-top:16px"><a class="btn" data-go="contact.html" href="contact.html#demande">Valider le rendez-vous <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><button class="link" type="button" data-again style="background:none;border:0;border-bottom:1px solid;cursor:pointer">Modifier</button></div></div>
+</section>
+<section class="s wrap">
+  <div class="sh"><div><div class="eyebrow">Prestations</div><h2 class="t">Nos prestations</h2></div><a class="link" href="prestations.html">Tous les tarifs →</a></div>
+  <div class="offers"><article class="offer"><div class="pic" style="background-image:url(../img/brushing.jpg)"></div>
+      <div class="body"><h3>Femme</h3><div class="pr">à partir de <b>26 €</b></div><div class="list"><div class="check menu-l"><span>Coupe + brushing</span><em>42 €</em></div><div class="check menu-l"><span>Couleur racines</span><em>39 €</em></div><div class="check menu-l"><span>Balayage</span><em>dès 75 €</em></div></div>
+      <a class="btn line sm go" href="prestations.html#femme">Voir le détail</a></div></article><article class="offer"><div class="pic" style="background-image:url(../img/homme.jpg)"></div>
+      <div class="body"><h3>Homme</h3><div class="pr">à partir de <b>14 €</b></div><div class="list"><div class="check menu-l"><span>Coupe</span><em>24 €</em></div><div class="check menu-l"><span>Coupe + barbe</span><em>32 €</em></div><div class="check menu-l"><span>Taille de barbe</span><em>14 €</em></div></div>
+      <a class="btn line sm go" href="prestations.html#homme">Voir le détail</a></div></article><article class="offer"><div class="pic" style="background-image:url(../img/coupe.jpg)"></div>
+      <div class="body"><h3>Enfant</h3><div class="pr">à partir de <b>8 €</b></div><div class="list"><div class="check menu-l"><span>Coupe garçon</span><em>16 €</em></div><div class="check menu-l"><span>Coupe fille</span><em>19 €</em></div><div class="check menu-l"><span>Frange seule</span><em>8 €</em></div></div>
+      <a class="btn line sm go" href="prestations.html#enfant">Voir le détail</a></div></article></div>
+  <div class="note"><span>Mariages et cérémonies : chignons et essais coiffure sur rendez-vous.</span><a class="btn line sm" href="contact.html#demande">Demander un essai</a></div>
+</section>
+
+<section class="s wrap" style="padding-top:20px">
+  <div class="sh"><div><div class="eyebrow">Comment ça se passe</div><h2 class="t">Votre rendez-vous</h2></div></div>
+  <div class="steps"><div class="step"><i>01</i><h3>Réservation</h3><p>En ligne ou par téléphone, du mardi au samedi.</p></div><div class="step"><i>02</i><h3>Diagnostic</h3><p>On regarde vos cheveux et on parle de ce que vous voulez.</p></div><div class="step"><i>03</i><h3>Prestation</h3><p>Shampoing, coupe ou couleur, avec des produits professionnels.</p></div><div class="step"><i>04</i><h3>Conseils</h3><p>Comment coiffer et entretenir chez vous.</p></div></div>
+</section>
+<section class="s soft wrap">
+  <div class="sh"><div><div class="eyebrow">Galerie</div><h2 class="t">Quelques réalisations</h2></div><a class="link" href="realisations.html">Toute la galerie →</a></div>
+  <div class="gal"><figure data-cat="Coiffage" data-full="../img/ondulations.jpg" style="background-image:url(../img/ondulations.jpg)"><figcaption><b>Ondulations</b>Coiffage</figcaption></figure><figure data-cat="Couleur" data-full="../img/pastel.jpg" style="background-image:url(../img/pastel.jpg)"><figcaption><b>Couleur pastel</b>Couleur</figcaption></figure><figure data-cat="Coupe" data-full="../img/boucles.jpg" style="background-image:url(../img/boucles.jpg)"><figcaption><b>Boucles naturelles</b>Coupe</figcaption></figure><figure data-cat="Coupe" data-full="../img/coupe-courte.jpg" style="background-image:url(../img/coupe-courte.jpg)"><figcaption><b>Coupe courte</b>Coupe</figcaption></figure><figure data-cat="Couleur" data-full="../img/blond.jpg" style="background-image:url(../img/blond.jpg)"><figcaption><b>Blond lumineux</b>Couleur</figcaption></figure></div>
+  <p class="small" style="margin-top:12px">Photographies et légendes d’illustration.</p>
+</section>
+<section class="s wrap">
+  <div class="split"><div style="display:grid;grid-template-columns:1fr 1fr;gap:10px"><div style="min-height:240px;background:center/cover url(../img/camille.jpg);border-radius:var(--r)"></div><div style="min-height:240px;background:center/cover url(../img/ines.jpg);border-radius:var(--r)"></div></div>
+    <div><div class="eyebrow">L’équipe</div><h2 class="t">Trois coiffeuses, un même soin</h2><p>Quatre fauteuils, de la lumière naturelle et une équipe qui vous connaît. Ici, chaque rendez-vous commence par un vrai moment d’échange.</p>
+      <div class="duo"><div><b>Camille</b><span>Fondatrice · coloriste</span></div><div><b>Inès</b><span>Coiffeuse · coupes courtes</span></div></div>
+      <p class="small">Prénoms et portraits illustratifs.</p>
+      <a class="btn line" style="margin-top:22px" href="a-propos.html">En savoir plus</a></div></div>
+</section>
+<section class="s wrap" style="padding-top:20px"><div class="band"><div><h2>Envie d’un changement ?</h2><p>Choisissez votre prestation et votre créneau, nous confirmons par SMS.</p></div><a class="btn" href="contact.html#demande">Prendre rendez-vous</a></div></section>
+</main>
+<footer class="ft wrap">
+  <div class="top">
+    <div><a class="logo" href="index.html"><b>l’épi</b><small>Salon de coiffure</small></a><p style="margin-top:16px;max-width:290px">Salon de coiffure indépendant pour femmes, hommes et enfants à <span class="ph">[Ville]</span>.</p></div>
+    <div><h4>Pages</h4><a class="l" href="index.html">Accueil</a><a class="l" href="prestations.html">Prestations</a><a class="l" href="realisations.html">Galerie</a><a class="l" href="a-propos.html">L’équipe</a><a class="l" href="contact.html">Rendez-vous</a></div>
+    <div><h4>Horaires</h4><span class="l">Mar – ven : 9 h 30 – 19 h</span><span class="l">Jeudi : jusqu’à 20 h</span><span class="l">Samedi : 9 h – 18 h</span><span class="l">Dim – lun : fermé</span></div>
+    <div><h4>Contact</h4><span class="l"><span class="ph">[Adresse du salon]</span></span><a class="l" href="tel:+33000000000"><span class="ph">[00 00 00 00 00]</span></a><a class="l" href="mailto:contact@nom-du-salon.fr"><span class="ph">[contact@nom-du-salon.fr]</span></a></div>
+  </div>
+  <div class="bot"><span>© <span data-year></span> l’épi · <a href="mentions-legales.html">Mentions légales</a> · <a href="mentions-legales.html#donnees">Données personnelles</a></span><span class="demo-note">Maquette — établissement fictif, informations illustratives · Réalisation : [votre nom]</span></div>
+</footer>
+<script src="../kit/std.js"></script>
+</body>
+</html>

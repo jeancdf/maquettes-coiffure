@@ -65,7 +65,7 @@
 </div>
 <div class="stage">
   <iframe id="f-essentiel" class="on" src="essentiel.html" title="Formule Essentiel"></iframe>
-  <iframe id="f-complet" src="complet.html" title="Formule Complet" loading="eager"></iframe>
+  <iframe id="f-complet" src="complet/index.html" title="Formule Complet" loading="eager"></iframe>
   <iframe id="f-ressort" src="ressort.html" title="Formule Sur mesure" loading="eager"></iframe>
 </div>
 <script>
@@ -80,12 +80,14 @@
       sw.querySelector(`[data-id="${k}"]`).setAttribute('aria-pressed', k === id);
     });
     sw.dataset.on = id;
-    solo.href = id + '.html';
+    solo.href = id === 'complet' ? 'complet/index.html' : id + '.html';
     history.replaceState(null, '', '#' + id);
   }
 
   function onKey(e) {
     if (e.metaKey || e.ctrlKey || e.altKey) return;
+    const el = e.target;
+    if (el && (el.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName))) return; // on tape dans un formulaire
     const i = ids.indexOf(sw.dataset.on);
     if (e.key >= '1' && e.key <= String(ids.length)) show(ids[e.key - 1]);
     else if (e.key === 'ArrowRight') show(ids[(i + 1) % ids.length]);
